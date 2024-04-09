@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec32a4d107.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <section class="container">
+        <section class="left">
+            <p>Payment methods</p>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+            <section class="methods">
+				<section onclick="doFun()" id="tColorA"><i class="fa-solid fa-credit-card"></i> Payment by card</section>
+				<section onclick="doFunA()" id="tColorB"><i class="fa-solid fa-building-columns"></i> Internet banks</section>
+				<section onclick="doFunB()" id="tColorC"><i class="fa-solid fa-wallet"></i> Apple/Google pay</section>
+			</section>
+                    <hr style="border: 1px solid #ccc; margin: 0 15px;">
+                </section>
+                <section class="center">
+                    <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="250" height="auto"/></a>
+                    <hr style="border: 1px solid #ccc; margin: 0 15px;">
+                    <section class="card-details">
+                        <form>
+                            <p>Card Number</p>
+                            <section class="c-number" id="c-number">
+                                <input id="number" class="cc-number" placeholder="Card Number" maxlength="19" required>
+                                <i class="fa-solid fa-credit-card" style="margin: 0;"></i>
+                            </section>
+                            <section class="c-details">
+                                <section>
+                                    <p>Expire Date</p>
+                                    <input id="e-date" class="cc-exp" placeholder="MM/YY" required maxlength="5">
+                                </section>
+                                <section>
+                                    <p>CVV</p>
+                                    <section class="cvv-box" id="cvv-box">
+                                        <input id="cvv" class="cc-cvv" placeholder="CVV" required maxlength="3">
+                                        <i class="fa-solid fa-circle-question" style="cursor: pointer;"></i>
+                                    </section>
+                                </section>
+                            </section>
+                            <section class="email">
+                                <p>Email</p>
+                                <input type="email" placeholder="example@gmail.com" id="email" required>
+                            </section>
+                            <button>PAY NOW</button>
+                        </form>
+                    </section>
+                </section>
+                <section class="right">
+                    <p>Order information</p>
+                    <hr style="border:1px solid #ccc; margin: 0 15px;">
+                    <section class="details">
+                        <section style="font-weight: bold; padding: 3px 0;">Order discription</section>
+                        <section style="padding: 3px 0;">Test payment</section>
+                    </section>
+                    <hr style="border:1px solid #ccc; margin: 0 15px;">
+                    <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="100%" height="auto" /></a>
+                </section>
+        </section>
+    </section>
+    <script src="card.js"></script>
+</body>
+</html>
